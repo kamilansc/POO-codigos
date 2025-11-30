@@ -1,0 +1,19 @@
+class Autenticacao {
+    usuario;
+    senha;
+    constructor(usuario, senha) {
+        this.usuario = usuario;
+        this.senha = senha;
+    }
+    validar() {
+        if (this.usuario === "admin" && this.senha === "1234") {
+            return "true";
+        }
+        else {
+            return "false";
+        }
+    }
+}
+let kamila = new Autenticacao("admin", "1234");
+console.log(kamila.validar());
+export {};
